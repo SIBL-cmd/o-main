@@ -464,7 +464,7 @@ export default function HeroEnhanced() {
     </div>
   </div>
 
-  {/* Существующая кнопка SWAP (оставь как есть) */}
+  {/* Существующая кнопка SWAP (оставь как есть)  */}
 
 
               
