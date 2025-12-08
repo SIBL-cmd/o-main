@@ -25,21 +25,21 @@ export default function HeroEnhanced() {
 
   const contractAddress = "BTCgJqur2WtMrhk8o9SwxtQX8aHV8vyndd6QhfqrbBSB";
 
-  const copyToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText(contractAddress);
-      toast({
-        title: "Copied!",
-        description: "Contract address copied to clipboard",
-      });
-    } catch (err) {
-      toast({
-        title: "Error",
-        description: "Failed to copy address",
-        variant: "destructive",
-      });
-    }
-  };
+  const copyToClipboard = async (text: string, label: string) => {
+  try {
+    await navigator.clipboard.writeText(text);
+    toast({
+      title: "Copied!",
+      description: `${label} copied to clipboard`,
+    });
+  } catch (err) {
+    toast({
+      title: "Error",
+      description: `Failed to copy ${label}`,
+      variant: "destructive",
+    });
+  }
+};
 
   useEffect(() => {
     setViewportHeight(window.innerHeight);
@@ -406,22 +406,67 @@ export default function HeroEnhanced() {
           
           <div className="space-y-6 py-6">
             <div className="text-center space-y-4">
-              <p className="font-sans text-sm text-muted-foreground">
-                Contract Address:
-              </p>
-              
-              <div 
-                className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
-                onClick={copyToClipboard}
-                data-testid="button-copy-address"
-              >
-                <div className="flex items-center justify-between gap-2">
-                  <p className="font-mono text-xs break-all text-foreground" data-testid="text-contract-address">
-                    {contractAddress}
-                  </p>
-                  <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
-                </div>
-              </div>
+              <div className="text-center space-y-4">
+  {/* Блок 1: BEP20 */}
+  <div className="relative">
+    <label className="absolute top-0 left-0 bg-primary text-primary-foreground px-2 py-1 rounded-sm text-xs font-bold -translate-y-1/2 z-10">
+      BEP20:
+    </label>
+    <div
+      className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
+      onClick={() => copyToClipboard("0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f", "BEP20 address")}
+      data-testid="button-copy-bep20"
+    >
+      <div className="flex items-center justify-between gap-2">
+        <p className="font-mono text-xs break-all text-foreground" data-testid="text-bep20-address">
+          0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f
+        </p>
+        <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
+      </div>
+    </div>
+  </div>
+
+  {/* Блок 2: ERC20 */}
+  <div className="relative">
+    <label className="absolute top-0 left-0 bg-blue-500 text-white px-2 py-1 rounded-sm text-xs font-bold -translate-y-1/2 z-10">
+      ERC20:
+    </label>
+    <div
+      className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
+      onClick={() => copyToClipboard("0x97649abbFedd99404dC7b57069Eb49c351D8d88a", "ERC20 address")}
+      data-testid="button-copy-erc20"
+    >
+      <div className="flex items-center justify-between gap-2">
+        <p className="font-mono text-xs break-all text-foreground" data-testid="text-erc20-address">
+          0x97649abbFedd99404dC7b57069Eb49c351D8d88a
+        </p>
+        <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
+      </div>
+    </div>
+  </div>
+
+  {/* Блок 3: TRC20 */}
+  <div className="relative">
+    <label className="absolute top-0 left-0 bg-green-500 text-white px-2 py-1 rounded-sm text-xs font-bold -translate-y-1/2 z-10">
+      TRC20:
+    </label>
+    <div
+      className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
+      onClick={() => copyToClipboard("TVVsLit9ugjHkybE7PBYtvVnWBoL7RLaCD", "TRC20 address")}
+      data-testid="button-copy-trc20"
+    >
+      <div className="flex items-center justify-between gap-2">
+        <p className="font-mono text-xs break-all text-foreground" data-testid="text-trc20-address">
+          TVVsLit9ugjHkybE7PBYtvVnWBoL7RLaCD
+        </p>
+        <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
+      </div>
+    </div>
+  </div>
+
+  {/* Существующая кнопка SWAP (оставь как есть) */}
+
+
               
               <div className="flex flex-col gap-3 mt-6">
                 <a
