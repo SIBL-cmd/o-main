@@ -351,22 +351,24 @@ export default function HeroEnhanced() {
 
 {/* Новый блок с адресами — красиво, с анимациейg */}
 <motion.div
-  className="mt-4 mb-6 text-center space-y-1"
+  className="mt-4 mb-6 text-center"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 1.3, duration: 0.6 }}
 >
-  <motion.p
-    className="font-sans text-sm text-gray-600 dark:text-gray-400"
+  <motion.div
+    className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-4 font-sans text-sm text-gray-600 dark:text-gray-400"
     data-testid="text-hero-addresses"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 1.3, duration: 0.6 }}
   >
-    BEP20: <span className="font-mono">0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f</span> •
-    ERC20: <span className="font-mono">0x97649abbFedd99404dC7b57069Eb49c351D8d88a</span> •
-    TRC20: <span className="font-mono">TVVsLit9ugjHkybE7PBYtvVnWBoL7RLaCD</span>
-  </motion.p>
+    <span>BEP20: <span className="font-mono">0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f</span></span>
+    <span className="hidden sm:inline">•</span>
+    <span>ERC20: <span className="font-mono">0x97649abbFedd99404dC7b57069Eb49c351D8d88a</span></span>
+    <span className="hidden sm:inline">•</span>
+    <span>TRC20: <span className="font-mono">TVVsLit9ugjHkybE7PBYtvVnWBoL7RLaCD</span></span>
+  </motion.div>
 </motion.div>
 
 <motion.p
