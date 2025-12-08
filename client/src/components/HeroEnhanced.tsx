@@ -349,7 +349,7 @@ export default function HeroEnhanced() {
   BUY THE WRONG BITCOIN
 </motion.button>
 
-{/* Новый блок с адресами — красиво, с анимjациейg */}
+{/* Новый блок с адресами — красиво, с аниjмjациейg */}
 <motion.div
   className="mt-4 mb-6 text-center"
   initial={{ opacity: 0 }}
