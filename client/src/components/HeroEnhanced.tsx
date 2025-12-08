@@ -406,7 +406,7 @@ export default function HeroEnhanced() {
           
           <div className="space-y-6 py-6">
             <div className="text-center space-y-4">
-              <div className="text-center space-y-4">
+
   {/* Блок 1: BEP20 */}
   <div className="relative">
     <label className="absolute top-0 left-0 bg-primary text-primary-foreground px-2 py-1 rounded-sm text-xs font-bold -translate-y-1/2 z-10">
