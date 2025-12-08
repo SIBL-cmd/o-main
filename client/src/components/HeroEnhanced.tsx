@@ -327,37 +327,57 @@ export default function HeroEnhanced() {
           </motion.p>
 
           {/* CTA with pulsing animation */}
-          <motion.button
-            className="mario-button relative"
-            data-testid="button-hero-cta"
-            onClick={() => setShowBuyModal(true)}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ 
-              opacity: 1, 
-              scale: [1, 1.06, 1]
-            }}
-            transition={{
-              opacity: { delay: 1.2, duration: 0.4 },
-              scale: {
-                delay: 1.6,
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }
-            }}
-          >
-            BUY THE WRONG BITCOIN
-          </motion.button>
+<motion.button
+  className="mario-button relative"
+  data-testid="button-hero-cta"
+  onClick={() => setShowBuyModal(true)}
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{
+    opacity: 1,
+    scale: [1, 1.06, 1]
+  }}
+  transition={{
+    opacity: { delay: 1.2, duration: 0.4 },
+    scale: {
+      delay: 1.6,
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  }}
+>
+  BUY THE WRONG BITCOIN
+</motion.button>
 
-          <motion.p 
-            className="font-sans text-sm mt-8 text-gray-600 dark:text-gray-400" 
-            data-testid="text-hero-disclaimer"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4, duration: 0.6 }}
-          >
-            TICKER: $BTC • 100% COMEDY • 0% UTILITY
-          </motion.p>
+{/* Новый блок с адресами — красиво, с анимацией */}
+<motion.div
+  className="mt-4 mb-6 text-center space-y-1"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 1.3, duration: 0.6 }}
+>
+  <motion.p
+    className="font-sans text-sm text-gray-600 dark:text-gray-400"
+    data-testid="text-hero-addresses"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 1.3, duration: 0.6 }}
+  >
+    BEP20: <span className="font-mono">0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f</span> •
+    ERC20: <span className="font-mono">0x97649abbFedd99404dC7b57069Eb49c351D8d88a</span> •
+    TRC20: <span className="font-mono">TVVsLit9ugjHkybE7PBYtvVnWBoL7RLaCD</span>
+  </motion.p>
+</motion.div>
+
+<motion.p
+  className="font-sans text-sm mt-8 text-gray-600 dark:text-gray-400"
+  data-testid="text-hero-disclaimer"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 1.4, duration: 0.6 }}
+>
+  TICKER: $BTC • 100% COMEDY • 0% UTILITY
+</motion.p>
 
           {/* Additional comedy text */}
           <motion.p 
