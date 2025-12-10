@@ -466,6 +466,23 @@ export default function HeroEnhanced() {
     </div>
   </div>
 
+              <div className="relative">
+    <label className="absolute top-0 left-0 bg-yellow-500 text-white px-2 py-1 rounded-sm text-xs font-bold -translate-y-1/2 z-10">
+      SOL:
+    </label>
+    <div
+      className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
+      onClick={() => copyToClipboard("BTCgJqur2WtMrhk8o9SwxtQX8aHV8vyndd6QhfqrbBSB", "SOL20 address")}
+      data-testid="button-copy-trc20"
+    >
+      <div className="flex items-center justify-between gap-2">
+        <p className="font-mono text-xs break-all text-foreground" data-testid="text-trc20-address">
+          BTCgJqur2WtMrhk8o9SwxtQX8aHV8vyndd6QhfqrbBSB
+        </p>
+        <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
+      </div>
+    </div>
+  </div>
   {/* Существующая кнопка SWAP (оставь как есть)  */}
 
 
