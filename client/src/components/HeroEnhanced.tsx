@@ -363,7 +363,7 @@ export default function HeroEnhanced() {
     animate={{ opacity: 1 }}
     transition={{ delay: 1.3, duration: 0.6 }}
   >
-    <span>BEP20: <span className="font-mono">0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f</span></span>
+    <span>BEP20: <span className="font-mono">0x4D2d0943Da18e1Bb2518997821bd62afaDD5C16C</span></span>
     <span className="hidden sm:inline">•</span>
     <span>ERC20: <span className="font-mono">0x97649abbFedd99404dC7b57069Eb49c351D8d88a</span></span>
     <span className="hidden sm:inline">•</span>
@@ -416,12 +416,12 @@ export default function HeroEnhanced() {
     </label>
     <div
       className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
-      onClick={() => copyToClipboard("0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f", "BEP20 address")}
+      onClick={() => copyToClipboard("0x4D2d0943Da18e1Bb2518997821bd62afaDD5C16C", "BEP20 address")}
       data-testid="button-copy-bep20"
     >
       <div className="flex items-center justify-between gap-2">
         <p className="font-mono text-xs break-all text-foreground" data-testid="text-bep20-address">
-          0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f
+          0x4D2d0943Da18e1Bb2518997821bd62afaDD5C16C
         </p>
         <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
       </div>

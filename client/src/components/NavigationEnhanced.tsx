@@ -233,12 +233,12 @@ export default function NavigationEnhanced() {
     </label>
     <div
       className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
-      onClick={() => copyToClipboard("0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f", "BEP20 address")}
+      onClick={() => copyToClipboard("0x4D2d0943Da18e1Bb2518997821bd62afaDD5C16C", "BEP20 address")}
       data-testid="button-copy-bep20"
     >
       <div className="flex items-center justify-between gap-2">
         <p className="font-mono text-xs break-all text-foreground" data-testid="text-bep20-address">
-          0xDed773F55A1BBE0e1f58F5A9EE10c20e4EA7328f
+          0x4D2d0943Da18e1Bb2518997821bd62afaDD5C16C
         </p>
         <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
       </div>
