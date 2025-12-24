@@ -233,12 +233,12 @@ export default function NavigationEnhanced() {
     </label>
     <div
       className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
-      onClick={() => copyToClipboard("0x4D2d0943Da18e1Bb2518997821bd62afaDD5C16C", "BEP20 address")}
+      onClick={() => copyToClipboard("0xde52D751274691c2f513c5f12Ee88adc1910C1B6", "BEP20 address")}
       data-testid="button-copy-bep20"
     >
       <div className="flex items-center justify-between gap-2">
         <p className="font-mono text-xs break-all text-foreground" data-testid="text-bep20-address">
-          0x4D2d0943Da18e1Bb2518997821bd62afaDD5C16C
+          0xde52D751274691c2f513c5f12Ee88adc1910C1B6
         </p>
         <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
       </div>
@@ -252,12 +252,12 @@ export default function NavigationEnhanced() {
     </label>
     <div
       className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
-      onClick={() => copyToClipboard("0x97649abbFedd99404dC7b57069Eb49c351D8d88a", "ERC20 address")}
+      onClick={() => copyToClipboard("0x858955656457C6c2a11beBb449Bc31a3662Ff769", "ERC20 address")}
       data-testid="button-copy-erc20"
     >
       <div className="flex items-center justify-between gap-2">
         <p className="font-mono text-xs break-all text-foreground" data-testid="text-erc20-address">
-          0x97649abbFedd99404dC7b57069Eb49c351D8d88a
+          0x858955656457C6c2a11beBb449Bc31a3662Ff769
         </p>
         <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
       </div>
