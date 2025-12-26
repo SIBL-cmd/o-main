@@ -363,9 +363,9 @@ export default function HeroEnhanced() {
     animate={{ opacity: 1 }}
     transition={{ delay: 1.3, duration: 0.6 }}
   >
-    <span>BEP20: <span className="font-mono">0xde52D751274691c2f513c5f12Ee88adc1910C1B6</span></span>
+    <span>BEP20: <span className="font-mono">0x56964fe1A0a07936d11D9F57b6d809fB6B9a0a80</span></span>
     <span className="hidden sm:inline">•</span>
-    <span>ERC20: <span className="font-mono">0x858955656457C6c2a11beBb449Bc31a3662Ff769</span></span>
+    <span>ERC20: <span className="font-mono">0x435829e086626e5a9AeAD79Ebf21BA7345E9B34F</span></span>
     <span className="hidden sm:inline">•</span>
     <span>TRC20: <span className="font-mono">TVVsLit9ugjHkybE7PBYtvVnWBoL7RLaCD</span></span>
   </motion.div>
@@ -416,12 +416,12 @@ export default function HeroEnhanced() {
     </label>
     <div
       className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
-      onClick={() => copyToClipboard("0xde52D751274691c2f513c5f12Ee88adc1910C1B6", "BEP20 address")}
+      onClick={() => copyToClipboard("0x56964fe1A0a07936d11D9F57b6d809fB6B9a0a80", "BEP20 address")}
       data-testid="button-copy-bep20"
     >
       <div className="flex items-center justify-between gap-2">
         <p className="font-mono text-xs break-all text-foreground" data-testid="text-bep20-address">
-          0xde52D751274691c2f513c5f12Ee88adc1910C1B6
+          0x56964fe1A0a07936d11D9F57b6d809fB6B9a0a80
         </p>
         <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
       </div>
@@ -435,12 +435,12 @@ export default function HeroEnhanced() {
     </label>
     <div
       className="p-4 bg-muted rounded-md border-2 border-border hover-elevate cursor-pointer transition-all"
-      onClick={() => copyToClipboard("0x858955656457C6c2a11beBb449Bc31a3662Ff769", "ERC20 address")}
+      onClick={() => copyToClipboard("0x435829e086626e5a9AeAD79Ebf21BA7345E9B34F", "ERC20 address")}
       data-testid="button-copy-erc20"
     >
       <div className="flex items-center justify-between gap-2">
         <p className="font-mono text-xs break-all text-foreground" data-testid="text-erc20-address">
-          0x858955656457C6c2a11beBb449Bc31a3662Ff769
+          0x435829e086626e5a9AeAD79Ebf21BA7345E9B34F
         </p>
         <Copy className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
       </div>
